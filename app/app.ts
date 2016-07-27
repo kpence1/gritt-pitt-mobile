@@ -3,6 +3,7 @@ import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {LoginPage} from './pages/login/login';
 import {CreatePage} from './pages/create/create';
+import {QuestionPage} from './pages/question/question';
 
 
 @Component({

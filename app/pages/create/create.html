@@ -5,7 +5,79 @@
 </ion-header>
 
 <ion-content padding class="create">
-  <h2>Create</h2>
-  <p>
-   Create account</p>
+  <ion-list>
+
+  <ion-item>
+    <ion-label inline>First Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label inline>Last Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Height</ion-label>
+    <ion-select [(ngModel)]="height">
+      <ion-option value="53">5'3"</ion-option>
+      <ion-option value="54">5'4"</ion-option>
+      <ion-option value="55">5'5"</ion-option>
+      <ion-option value="56">5'6"</ion-option>
+      <ion-option value="57">5'7"</ion-option>
+      <ion-option value="58">5'8"</ion-option>
+      <ion-option value="59">5'9"</ion-option>
+      <ion-option value="510">5'10"</ion-option>
+      <ion-option value="511">5'11"</ion-option>
+      <ion-option value="60">6'0"</ion-option>
+      <ion-option value="61">6'1"</ion-option>
+      <ion-option value="62">6'2"</ion-option>
+      <ion-option value="63">6'3"</ion-option>
+      <ion-option value="64">6'4"</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label inline>Weight (lbs.)</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label inline>Age</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label inline>Mobile Phone</ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label inline>Email</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label inline>Physician's Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label inline>Physician's Number</ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label inline>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label inline>Confirm Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  </ion-list>
+
+  <button dark full>Go to Questionnaire</button>
 </ion-content>
