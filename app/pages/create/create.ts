@@ -9,5 +9,5 @@ export class CreatePage {
   constructor(private navCtrl: NavController) {
   
   }
-  
+
 }

@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {LoginPage} from './pages/login/login';
+import {CreatePage} from './pages/create/create';
 
 
 @Component({
