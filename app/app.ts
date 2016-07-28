@@ -4,6 +4,7 @@ import {StatusBar} from 'ionic-native';
 import {LoginPage} from './pages/login/login';
 import {CreatePage} from './pages/create/create';
 import {QuestionPage} from './pages/question/question';
+import {QuestionsPage} from './pages/questions/questions';
 
 
 @Component({

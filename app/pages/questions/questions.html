@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>General Medial Questions</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="questions">
+    
+
+  <ion-card>
+    <ion-card-header>
+        1. 
+    </ion-card-header>
+    <ion-card-content>
+    <ion-item>
+        <ion-label stacked>What is your current occupation?</ion-label>
+        <ion-textarea *ngIf="occupation" [(ngModel)]="msg" placeholder>Current Occupation</ion-textarea>
+        <ion-toggle [(ngModel)]="occupation"></ion-toggle>
+    </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+        2.
+    </ion-card-header>
+    <ion-card-content>
+    <ion-item>
+        <ion-label stacked>Does your occupation require extended periods of sitting?</ion-label>
+        <ion-toggle [(ngModel)]="sitting"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+        3.
+    </ion-card-header>
+    <ion-card-content>
+    In the past month, have you had chest pain when you were not performing any
+physical activity? 
+    <ion-item>
+        <ion-toggle [(ngModel)]="pain"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+        4.
+    </ion-card-header>
+    <ion-card-content>
+    Do you lose your balance because of dizziness or do you ever lose
+consciousness? 
+    <ion-item>
+        <ion-toggle [(ngModel)]="dizzy"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+        5.
+    </ion-card-header>
+    <ion-card-content>
+    Do you have a bone or joint problem that could be made worse by a change in
+your physical activity?
+    <ion-item>
+        <ion-toggle [(ngModel)]="bone"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+        6.
+    </ion-card-header>
+    <ion-card-content>
+    Is your doctor currently prescribing any medication for your blood pressure or
+for a heart condition?
+    <ion-item>
+        <ion-toggle [(ngModel)]="medication"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+        7.
+    </ion-card-header>
+    <ion-card-content>
+    Do you know of <u>any</u> other reason why you should not engage in physical
+activity? 
+    <ion-item>
+        <ion-toggle [(ngModel)]="physical"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <button (click)="GoToQuestionsPage()" class="toggle-checked" full>Onto the next Questions</button>
+
+</ion-content>

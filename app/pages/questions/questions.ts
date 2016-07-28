@@ -1,11 +1,11 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
-import {QuestionsPage} from '../questions/questions';
+import {QuestionPage} from '../question/question';
 
 @Component({
-  templateUrl: 'build/pages/question/question.html'
+  templateUrl: 'build/pages/questions/questions.html'
 })
-export class QuestionPage {
+export class QuestionsPage {
   constructor(private nav: NavController) {
   
   }
