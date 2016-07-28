@@ -4,14 +4,97 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="home">
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>app/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content padding class="question">
+    
+
+  <ion-card class="black">
+    <ion-card-header class="black">
+        1. 
+    </ion-card-header>
+    <ion-card-content>
+    Has your doctor ever said that you have a heart condition and that you should
+only perform physical activity recommended by a doctor? 
+    <ion-item class="black">
+    <ion-toggle class="black" [(ngModel)]="heart"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="black">
+    <ion-card-header class="black">
+        2.
+    </ion-card-header>
+    <ion-card-content class="black">
+    Do you feel pain in your chest when you perform physical activity?
+    <ion-item class="black">
+        <ion-toggle [(ngModel)]="chest"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="black">
+    <ion-card-header class="black">
+        3.
+    </ion-card-header>
+    <ion-card-content class="black">
+    In the past month, have you had chest pain when you were not performing any
+physical activity? 
+    <ion-item class="black">
+        <ion-toggle class="black" [(ngModel)]="pain"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="black">
+    <ion-card-header class="black">
+        4.
+    </ion-card-header>
+    <ion-card-content class="black">
+    Do you lose your balance because of dizziness or do you ever lose
+consciousness? 
+    <ion-item class="black">
+        <ion-toggle [(ngModel)]="dizzy"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="black">
+    <ion-card-header class="black">
+        5.
+    </ion-card-header>
+    <ion-card-content class="black">
+    Do you have a bone or joint problem that could be made worse by a change in
+your physical activity?
+    <ion-item class="black">
+        <ion-toggle class="black" [(ngModel)]="bone"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="black">
+    <ion-card-header class="black">
+        6.
+    </ion-card-header>
+    <ion-card-content class="black">
+    Is your doctor currently prescribing any medication for your blood pressure or
+for a heart condition?
+    <ion-item class="black">
+        <ion-toggle class="black" [(ngModel)]="medication"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="black">
+    <ion-card-header class="black">
+        7.
+    </ion-card-header>
+    <ion-card-content class="black">
+    Do you know of <u>any</u> other reason why you should not engage in physical
+activity? 
+    <ion-item class="black">
+        <ion-toggle class="black" [(ngModel)]="physical"></ion-toggle>
+    </ion-item>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
