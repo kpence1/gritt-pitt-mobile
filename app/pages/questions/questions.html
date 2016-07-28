@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>General Medial Questions</ion-title>
+    <ion-title>General Medical Questions</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -8,13 +8,12 @@
     
 
   <ion-card>
-    <ion-card-header>
-        1. 
-    </ion-card-header>
     <ion-card-content>
-    <ion-item>
-        <ion-label stacked>What is your current occupation?</ion-label>
-        <ion-textarea *ngIf="occupation" [(ngModel)]="msg" placeholder>Current Occupation</ion-textarea>
+        What is your current occupation?
+        <ion-item>
+        <ion-textarea *ngIf="occupation" [(ngModel)]="msg" placeholder="Current Occupation"></ion-textarea>
+        </ion-item>
+        <ion-item>
         <ion-toggle [(ngModel)]="occupation"></ion-toggle>
     </ion-item>
 
@@ -22,82 +21,124 @@
   </ion-card>
 
   <ion-card>
-    <ion-card-header>
-        2.
-    </ion-card-header>
     <ion-card-content>
+    Does your occupation require extended periods of sitting?
     <ion-item>
-        <ion-label stacked>Does your occupation require extended periods of sitting?</ion-label>
         <ion-toggle [(ngModel)]="sitting"></ion-toggle>
     </ion-item>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
-    <ion-card-header>
-        3.
-    </ion-card-header>
     <ion-card-content>
-    In the past month, have you had chest pain when you were not performing any
-physical activity? 
+        Does your occupation require extended periods of repetitive movements? (If yes, please explain.) 
+        <ion-item>
+        <ion-textarea *ngIf="repetitive" [(ngModel)]="msg" placeholder="Please explain"></ion-textarea>
+        </ion-item>
+        <ion-item>
+        <ion-toggle [(ngModel)]="repetitive"></ion-toggle>
+    </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+    Does your occupation require you to wear shoes with a heel (dress shoes)? 
     <ion-item>
-        <ion-toggle [(ngModel)]="pain"></ion-toggle>
+        <ion-toggle [(ngModel)]="dress"></ion-toggle>
     </ion-item>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
-    <ion-card-header>
-        4.
-    </ion-card-header>
     <ion-card-content>
-    Do you lose your balance because of dizziness or do you ever lose
-consciousness? 
+    Does your occupation cause you anxiety (mental stress)? 
     <ion-item>
-        <ion-toggle [(ngModel)]="dizzy"></ion-toggle>
+        <ion-toggle [(ngModel)]="anxiety"></ion-toggle>
     </ion-item>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
-    <ion-card-header>
-        5.
-    </ion-card-header>
     <ion-card-content>
-    Do you have a bone or joint problem that could be made worse by a change in
-your physical activity?
-    <ion-item>
-        <ion-toggle [(ngModel)]="bone"></ion-toggle>
+        Do you partake in any recreational activities (golf, tennis, skiing, etc.)? (If yes, please explain.)  
+        <ion-item>
+        <ion-textarea *ngIf="recreational" [(ngModel)]="msg" placeholder="Please explain"></ion-textarea>
+        </ion-item>
+        <ion-item>
+        <ion-toggle [(ngModel)]="recreational"></ion-toggle>
     </ion-item>
+
     </ion-card-content>
   </ion-card>
 
   <ion-card>
-    <ion-card-header>
-        6.
-    </ion-card-header>
     <ion-card-content>
-    Is your doctor currently prescribing any medication for your blood pressure or
-for a heart condition?
-    <ion-item>
+        Do you have any hobbies (reading, gardening, working on cars, exploring the Internet, etc.)? (If yes, please explain.)   
+        <ion-item>
+        <ion-textarea *ngIf="hobbies" [(ngModel)]="msg" placeholder="Please explain"></ion-textarea>
+        </ion-item>
+        <ion-item>
+        <ion-toggle [(ngModel)]="hobbies"></ion-toggle>
+    </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+        Have you ever had any pain or injuries (ankle, knee, hip, back, shoulder, etc.)? (If yes, please explain.)    
+        <ion-item>
+        <ion-textarea *ngIf="injuries" [(ngModel)]="msg" placeholder="Please explain"></ion-textarea>
+        </ion-item>
+        <ion-item>
+        <ion-toggle [(ngModel)]="injuries"></ion-toggle>
+    </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+        Have you ever had any surgeries? (If yes, please explain.)    
+        <ion-item>
+        <ion-textarea *ngIf="surgeries" [(ngModel)]="msg" placeholder="Please explain"></ion-textarea>
+        </ion-item>
+        <ion-item>
+        <ion-toggle [(ngModel)]="surgeries"></ion-toggle>
+    </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+        Has a medical doctor ever diagnosed you with a chronic disease, such as
+        coronary heart disease, coronary artery disease, hypertension (high blood pressure), high cholesterol or diabetes? (If yes, please explain.) 
+        <ion-item>
+        <ion-textarea *ngIf="disease" [(ngModel)]="msg" placeholder="Please explain"></ion-textarea>
+        </ion-item>
+        <ion-item>
+        <ion-toggle [(ngModel)]="disease"></ion-toggle>
+    </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+        Are you currently taking any medication? (If yes, please list.)  
+        <ion-item>
+        <ion-textarea *ngIf="medication" [(ngModel)]="msg" placeholder="Please explain"></ion-textarea>
+        </ion-item>
+        <ion-item>
         <ion-toggle [(ngModel)]="medication"></ion-toggle>
     </ion-item>
+
     </ion-card-content>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-        7.
-    </ion-card-header>
-    <ion-card-content>
-    Do you know of <u>any</u> other reason why you should not engage in physical
-activity? 
-    <ion-item>
-        <ion-toggle [(ngModel)]="physical"></ion-toggle>
-    </ion-item>
-    </ion-card-content>
-  </ion-card>
-
-  <button (click)="GoToQuestionsPage()" class="toggle-checked" full>Onto the next Questions</button>
+  <button (click)="GoToLoginPage()" class="toggle-checked" full>Submit</button>
 
 </ion-content>
