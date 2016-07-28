@@ -10,7 +10,6 @@ export class LoginPage {
   
   }
   GoToPage(){
-    console.log("hit")
     this.nav.push(CreatePage);
   }
 }
