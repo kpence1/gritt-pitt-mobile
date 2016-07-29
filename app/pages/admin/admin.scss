@@ -1,0 +1,23 @@
+.admin {
+    .nice {
+        background-color: #000000;
+        height: 40%;
+    }
+    .info {
+        background-color: #888888;
+        height: 60%;
+    }
+    .user {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        vertical-align: middle;
+    }
+    .one {
+        background-image: url('http://placehold.it/350x150');
+    }
+}
