@@ -11,7 +11,8 @@ import {SchedulePage} from './pages/schedule/schedule';
 import {ClientsPage} from './pages/clients/clients';
 
 @Component({
-  template: '<ion-nav [root]="rootPage"></ion-nav>'
+  template: '<ion-nav [root]="rootPage"></ion-nav>',
+  
 })
 export class MyApp {
 
