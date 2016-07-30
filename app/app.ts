@@ -9,6 +9,7 @@ import {QuestionsPage} from './pages/questions/questions';
 import {AdminPage} from './pages/admin/admin';
 import {SchedulePage} from './pages/schedule/schedule';
 import {ClientsPage} from './pages/clients/clients';
+import {FIREBASE_PROVIDERS, defaultFirebase, AngularFire} from 'angularfire2';
 
 @Component({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
@@ -29,4 +30,13 @@ export class MyApp {
   }
 }
 
-ionicBootstrap(MyApp);
+ionicBootstrap(MyApp, [
+    FIREBASE_PROVIDERS,
+    defaultFirebase({
+      apiKey: "AIzaSyB5P2A1S2q3v9U2IPRN6G-qT8ca2Edb4Z8",
+      authDomain: "grittpitt-722d0.firebaseapp.com",
+      databaseURL: "https://grittpitt-722d0.firebaseio.com",
+      storageBucket: "grittpitt-722d0.appspot.com",
+  }),
+]);
+
